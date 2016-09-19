@@ -1,9 +1,30 @@
+%section-light {
+    background: #fff;
+}
+
 %content-wrap {
     @include outer-container();
 }
 
 .section-header {
     @extend %content-wrap;
+    text-align: center;
+    padding: 7.0em 0 0 0;
+
+    h2 {
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+
+    hr {
+        display: inline-block;
+        color: $secondary-color;
+        background: $secondary-color;
+        width: 14.6em;
+        height: .6em;
+        border: 0;
+        margin-top: 3.0em;
+    }
 }
 
 .section-content {
