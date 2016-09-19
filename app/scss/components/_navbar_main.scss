@@ -1,0 +1,23 @@
+.navbar-main {
+    @extend %content-wrap;
+    padding: 2.4em 0;
+
+    .logo {
+        display: inline-block;
+    }
+
+    .menu-horizontal {
+        line-height: 4em;
+        > li {
+            a {
+                color: #fff;
+                font-size: 1.4em;
+                font-weight: 600;
+            }
+
+            + li {
+                margin-left: 6em;
+            }
+        }
+    }
+}

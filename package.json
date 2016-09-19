@@ -27,6 +27,7 @@
   "dependencies": {
     "bourbon": "^4.2.7",
     "bourbon-neat": "^1.7.4",
-    "normalize-scss": "^5.0.3"
+    "normalize-scss": "^5.0.3",
+    "materialize-css": "^0.97.7"
   }
 }

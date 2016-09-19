@@ -6,6 +6,10 @@
 @import 'bourbon/app/assets/stylesheets/bourbon';
 @import 'bourbon-neat/app/assets/stylesheets/neat';
 
+//import material styles
+@import 'materialize-css/sass/components/_buttons';
+@import 'materialize-css/sass/components/_mixins';
+
 @import 'page/base';
 @import 'components/base';
 @import 'modules/base';
