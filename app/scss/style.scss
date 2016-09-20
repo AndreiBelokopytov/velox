@@ -4,11 +4,17 @@
 @import 'settings';
 
 @import 'bourbon/app/assets/stylesheets/bourbon';
-@import 'bourbon-neat/app/assets/stylesheets/neat';
 
 //import material styles
 @import 'materialize-css/sass/components/_buttons';
 @import 'materialize-css/sass/components/_mixins';
+@import 'bourbon-neat/app/assets/stylesheets/neat';
+
+//import owl plugin styles
+@import 'vendor/owl-carousel/owl.carousel';
+@import 'vendor/owl-carousel/owl.theme';
+@import 'vendor/owl-carousel/owl.velox.theme';
+@import 'vendor/owl-carousel/owl.transitions';
 
 @import 'page/base';
 @import 'components/base';
