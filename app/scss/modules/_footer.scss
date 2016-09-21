@@ -5,4 +5,32 @@
         padding-top: 3em;
         padding-bottom: 3em;
     }
+
+    .copyright {
+        font-size: 1.3em;
+        line-height: 3.2em;
+        color: $dark-gray;
+    }
+    
+    .social-icons {
+        ul {
+            > li {
+                background-color: $dark-gray;
+                border-radius: 50%;
+
+                a {
+                    display: block;
+                    height: 3.2em;
+                    width: 3.2em;
+                    color: #fff;
+                    line-height: 3.2em;
+                    text-align: center;
+                }
+
+                + li {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
 }
