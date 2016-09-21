@@ -6,7 +6,12 @@
     float: right;
 }
 
+.row {
+    @include row();
+}
+
 // Z-levels
+// required by materialize components
 .z-depth-0 {
   box-shadow: none !important;
 }

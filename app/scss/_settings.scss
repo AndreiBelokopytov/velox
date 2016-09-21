@@ -8,12 +8,34 @@ $content-width: 117.2rem;
 $columns-count: 4;
 $column: 8.48em;
 $gutter: 1em;
+$gutter-width: $gutter;
 
 //Colors
 $primary-color: #3a3f4b;
 $secondary-color: #00a5ff;
 $light-gray: #f5f6f8;
 $dark-gray: #999999;
+$error-color: red;
+$success-color: green;
+
+// Text Inputs + Textarea
+$input-height: 3rem !default;
+$input-border-color: $dark-gray;
+$input-border: .2rem solid $input-border-color !default;
+$input-background: #fff !default;
+$input-error-color: $error-color !default;
+$input-success-color: $success-color !default;
+$input-focus-color: $secondary-color !default;
+$input-font-size: 2.6rem;
+$input-margin: 0 0 1rem 0 !default;
+$input-padding: 0 0 1rem 1rem;
+$input-transition: all .3s !default;
+$label-font-size: 2.6rem;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$input-disabled-solid-color: #BDBDBD !default;
+$input-disabled-border: 1px dotted $input-disabled-color !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$placeholder-text-color: $primary-color;
 
 //Buttons
 $button-border: none !default;

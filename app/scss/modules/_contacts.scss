@@ -1,2 +1,84 @@
 .section-contacts {
+    position: relative;
+    background-color: $primary-color;
+    color: #fff;
+
+    nav {
+        > .navbar-title {
+            font-family: $accent-font-family;
+            font-size: 3.3em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        > .menu-horizontal {
+            > li {
+                a {
+                    color: #fff;
+                    font-size: 2.0em;
+                }
+
+                + li {
+                    margin-left: 3em;
+                }
+            }
+        }
+    }
+
+    .section-header {
+        @extend %content-wrap;
+        padding-top: 8.0em;
+        padding-bottom: 10em;
+        text-align: left;
+    }
+
+    .section-content {
+        @include row();
+        padding-bottom: 7em;
+    }
+
+    .contact-info {
+        @include span-columns(1 of 3);
+
+        padding-top: 2em;
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.8em;
+            line-height: 1.3333;
+            color: $dark-gray;
+        }
+    }
+
+    .contact-form {
+        @include span-columns(2 of 3);
+
+        #{$all-text-inputs} {
+            color: #fff;
+        }
+
+        .input-inline-half {
+            @include span-columns(1 of 2);
+        }
+
+        .material-button {
+            text-transform: none;
+        }
+
+        .row {
+            + .row {
+                margin-top: 5em;
+            }
+        }
+    }
+
+    .scroll-top {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
 }
