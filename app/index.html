@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans|Source+Sans+Pro" rel="stylesheet">
-    <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Velox</title>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <nav class="navbar-main">
             <div class="navbar-title left">
                 <a href="#" class="logo">
@@ -18,19 +18,16 @@
             </div>
             <ul class="menu-horizontal right">
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Testimonials</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#contacts">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -39,10 +36,10 @@
             <p>Clean, responsive, customizable one page template </p>
         </div>
         <div class="header-actions">
-            <button type="button" class="material-button">Get started now</button>
+            <a href="#services" class="material-button">Get started now</a>
         </div>
     </header>
-    <section class="section-services">
+    <section class="section-services" id="services">
         <div class="section-header">
             <h2>Our services</h2>
             <hr>
@@ -84,7 +81,7 @@
             </ul>
         </div>
     </section>
-    <section class="section-portfolio">
+    <section class="section-portfolio" id="portfolio">
         <div class="section-header">
             <h2>Portfolio</h2>
             <hr>
@@ -142,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section class="section-brands">
+    <section class="section-brands" id="brands">
         <div class="section-header">
             <h2>Recent Brands we’ve worked with</h2>
             <hr>
@@ -170,7 +167,7 @@
             </ul>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
         <div class="section-header">
             <h2>See what others are saying about us</h2>
             <hr>
@@ -216,7 +213,7 @@
             <div class="testimonials-slide-right"></div>
         </div>
     </section>
-    <section class="section-contacts">
+    <section class="section-contacts" id="contacts">
         <div class="section-header">
             <nav>
                 <div class="navbar-title left">Contact Us</div>
@@ -225,16 +222,16 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#contacts">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -278,9 +275,9 @@
                 </form>
             </div>
         </div>
-        <button class="btn-floating btn-large scroll-top">
+        <a href="#" class="btn-floating btn-large scroll-top">
             <i class="fa fa-chevron-up" aria-hidden="true"></i>
-        </button>
+        </a>
     </section>
     <footer class="site-footer">
         <div class="footer-content">
