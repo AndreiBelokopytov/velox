@@ -14,12 +14,25 @@
         > .menu-horizontal {
             > li {
                 a {
+                    position: relative;
                     color: #fff;
                     font-size: 2.0em;
                 }
 
                 + li {
                     margin-left: 3em;
+                }
+
+                &:hover {
+                    a::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.3rem;
+                        left: 0;
+                        right: 0;
+                        height: .2rem;
+                        background-color: #fff;
+                    }
                 }
             }
         }
