@@ -51,7 +51,7 @@
         }
     }
 
-    .owl-item.active:nth-of-type(2) .avatar{
+    .owl-item.active.active .avatar{
         transform: scale(1.2);
     }
 }

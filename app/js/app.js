@@ -5,28 +5,39 @@
         var OWL_THEME = 'velox-theme';
 
         var $testimonialItems = $('.testimonials-items'),
-            $testimonialQuotes = $('.testimonials-quotes');
+            $testimonialQuotes = $('.testimonials-quotes'),
+            $testimonialsSlideLeft = $('.testimonials-slide-left'),
+            $testimonialsSlideRight = $('.testimonials-slide-right'),
+            $testimonialsOwl;
 
         $testimonialItems.owlCarousel({
-            items: 3,
+            singleItem: true,
             pagination: false,
             addClassActive: true,
+            slideSpeed : 500,
             theme: OWL_THEME,
-            beforeMove: function(e) {
-                console.log(e);
-            }
+            mouseDrag : false,
+            touchDrag : false,
         });
 
         $testimonialQuotes.owlCarousel({
             singleItem: true,
             transitionStyle : 'fade',
-            theme: OWL_THEME
+            theme: OWL_THEME,
+            beforeMove: function() {
+                var current = this.currentItem;
+                $testimonialItems.trigger('owl.goTo', current);
+            }
         });
 
-        $($testimonialItems).on('click', '.owl-item', function(e) {
-            e.preventDefault();
-            var number = $(this).data('owlItem');
-            $testimonialQuotes.trigger('owl.goTo', number);
+        $testimonialsOwl = $testimonialQuotes.data('owlCarousel');
+
+        $testimonialsSlideLeft.on('click', function() {
+            $testimonialsOwl.prev();
+        });
+
+        $testimonialsSlideRight.on('click', function() {
+            $testimonialsOwl.next();
         });
     });
 
