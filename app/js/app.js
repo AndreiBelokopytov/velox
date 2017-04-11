@@ -10,6 +10,15 @@
             $testimonialsSlideRight = $('.testimonials-slide-right'),
             $testimonialsOwl;
 
+        $(document).on('focus', '.md-input', function(evt) {
+            $(evt.target).parent('.input-field').addClass('active');
+        });
+
+
+        $(document).on('blur', '.md-input', function(evt) {
+            $(evt.target).parent('.input-field').removeClass('active');
+        });
+
         $testimonialItems.owlCarousel({
             singleItem: true,
             pagination: false,

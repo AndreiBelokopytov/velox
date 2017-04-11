@@ -64,9 +64,7 @@ textarea.materialize-textarea {
   }
 
   // Focused input style
-  &:focus:not([readonly]) {
-    border-bottom: .2rem solid $input-focus-color;
-  }
+
 
   // Focused label style
   &:focus:not([readonly])+label {
@@ -236,4 +234,33 @@ textarea {
   word-wrap: break-word;
   overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
   padding-top: 1.2rem; /* prevents text jump on Enter keypress */
+}
+
+.input-field {
+
+    &::after {
+        content: '';
+        position: relative;
+        display: inline-block;
+        height: .2rem;
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        right: 0;
+        background-color: $secondary-color;
+        transform: scaleX(0.15);
+        transition: all .2s cubic-bezier(.4,0,.2,1);
+        visibility: hidden;
+    }
+
+    &.active {
+        .md-input {
+            border-bottom: 0;
+        }
+        
+        &::after {
+            visibility: visible;;
+            transform: scaleX(1);
+        }
+    }
 }
